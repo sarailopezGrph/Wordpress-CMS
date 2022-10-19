@@ -1,0 +1,799 @@
+:root{
+	/*Label*/
+	--color-label: #3F346F;
+	--color-label-activo: #3F346F;
+	--weight-label: 400;
+	--weight-label-bold: 400;
+	--weight-label-activo: 600;
+	--bottom-label:  18px;
+	--bottom-label-activo: 43px;
+	--fz-label: 16px;
+	--fz-label-activo: 13px;
+	--bg-label: transparent;
+	--bg-label-activo: transparent;
+	--bg-label-activo-2: #fafafa;
+
+	/*Input*/
+	--color-input: #606060;
+	--fz-input: 16px;
+	--weight-input: normal;
+	--bg-input: white;
+	--height-input:  50px;
+	--warning: #A6A6A6;	
+	--border-width: 0px;
+	--border-color: #A6A6A6;
+	--color-border-input-activo:#A6A6A6;
+	--color-border-input-focus:#A6A6A6;
+	--border-radio-input:  10px;
+	--box-shadow-input: 0px 2px 6px rgba(66, 32, 215, 0.13);;
+	--padding-input: 10px 10px 10px 10px;
+	--padding-input-focus: 15px;
+	--padding-input-activo: 15px;
+	--margin-bottom-input: 15px;
+
+	/*Mensaje de validacion*/
+	--color-mensaje: #2EBA34;
+	--align-mensaje-desktop: left;
+	--align-mensaje-mobile: center;
+
+	/*Select*/
+	--bg-select-dropdown: #f6f6f6;
+	--box-shadow-select-dropdown: 0 0 10px rgba(0,0,0,.2);
+
+	--color-select-normal: #606060; 
+
+	--bg-select-dropdown-focus: #f6f6f6 ;
+	--color-select-dropdown-focus: #3B37FE ;
+
+	--bg-select-dropdown-activo: rgba(0,0,0,.02) ;
+	--color-select-dropdown-activo: #3B37FE ;
+
+	--bg-select-dropdown-desabilitado: #F0F0F0 ;
+	--bg-color-dropdown-desabilitado: #666;
+
+	/*Textarea*/
+	--height-textarea: 115px;
+	--top-textarea: 15px;
+	--top-textarea-activo: -6px;
+
+	/*Todos los campos*/
+	--color-drop-icon-campos: #00FF64;
+	--right-drop-icon-campos: 18px;
+
+	/*Boton*/
+	--color-boton: white;
+	--height-boton: 50px;
+	--bg-boton: #2EBA34;
+	--fz-boton: 20px;
+	--color-boton-hover: white;
+	--bg-boton-hover: #00FF64;	
+
+	/*Link*/
+	--color-a:#2EBA34;
+
+	/* Checkbox */
+	--border-checkbox:  2px solid #606060;
+	--bg-checkbox:  #fafafa;
+	--border-checkbox-activo:  2px solid #fafafa;
+	--bg-checkbox-activo:  #2EBA34;
+
+	/*HTML*/
+	--font-family-html: "Poppins";
+
+	--color-h3-html: #3B37FE;
+	--fz-h3-html: 65px;
+	--fz-h3-html-movile: 45px;
+	--text-transform-h3-html: normal;
+	--font-weight-h3-html: bold;
+
+	--color-h4-html: #3B37FE;
+	--fz-h4-html: 55px;
+	--fz-h4-html-movile: 35px;
+	--text-transform-h4-html: normal;
+	--font-weight-h4-html: bold;
+
+	--color-h5-html: #3B37FE;
+	--fz-h5-html: 45px;
+	--fz-h5-html-movile: 25px;
+	--text-transform-h5-html: normal;
+	--font-weight-h5-html: bold;
+
+	--color-h6-html: #606060;
+	--fz-h6-html: 18px;
+	--fz-h6-html-movile: 16px;
+	--text-transform-h6-html: normal;
+	--font-weight-h6-html: 400;
+
+	--color-parrafo-html: #3F346F;
+	--fz-parrafo-html: 18px;
+	--fz-parrafo-html-movile: 16px;
+	--text-transform-parrafo-html: normal;
+	--font-weight-parrafo-html: 400;
+	--align-parrafo-html: center;
+}
+
+/*************************************/
+
+.form_style{
+	padding-top:0px !important;
+}
+.elementor-field-parent{
+	display: flex !important;
+	flex-wrap: wrap !important;
+}
+.form_style .elementor-field-group{
+	padding-right: calc( 10px/2 ) !important;
+	padding-left: calc( 10px/2 ) !important;
+	margin-bottom: var(--margin-bottom-input)  !important;
+	width: 100%;
+	position: relative;
+}
+
+/* Ocultar placeholder */
+textarea::placeholder,
+input::placeholder{
+	opacity: 0!important;
+}
+
+/* Quitar flechas al campo numerico */
+.form_style input[type=number]::-webkit-inner-spin-button,
+.form_style input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.form_style input[type=number] {
+	-moz-appearance:textfield;
+}
+
+/* Set la flecha del Campo fecha */
+.form_style input[type="date"]::-webkit-inner-spin-button,
+.form_style input[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	-webkit-appearance: none;
+}
+
+/* Set validaciones y estados de input*/
+.form_style input:invalid{
+	border-color: var(--warning) !important;
+}
+*:focus,
+input:invalid,
+input:focus,
+select:focus{
+	box-shadow: none !important;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+/*Input buscador*/
+.jet-search-filter__input{
+	padding: 16px 50px 0 16px !important;
+	background-repeat: no-repeat;
+	background-position: var(--right-drop-icon-campos) 22px;
+	background-image: url('');
+	background-size: 28px 28px;
+}
+.jet-search-filter__input{
+	padding: 28px 50px 5px 12px !important;
+}
+@media(max-width: 1024px){
+	.jet-search-filter__input{
+		padding: 26px 50px 4px 12px !important;
+	}
+}
+.elementor-field-group .elementor-select-wrapper:before{
+	display: none !important;
+}
+
+/* Mensaje de error */
+.form_style .elementor-message{
+	text-align: var(--align-mensaje-desktop);
+	color: var( --color-mensaje );
+	font-family: inherit !important;
+	margin: 10px 0 !important;
+	font-size: 14px !important;
+}
+.form_style .elementor-message.elementor-help-inline{
+	font-size: 11px !important;
+	position: absolute;
+	margin: 0px !important;
+	padding: 0px !important;
+	bottom: -16px !important;
+	left: 10px !important;
+	color: var(--warning) !important;
+}
+@media(max-width: 768px){
+	.form_style .elementor-message{
+		text-align: var(--align-mensaje-mobile);
+	}
+}
+
+/* Boton */
+.form_style .elementor-field-type-submit{
+	margin-top: 5px !important;
+}
+.form_style .elementor-button{
+	height: var(--height-boton) !important;
+	line-height: var(--height-boton) !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	background: var(--bg-boton) !important;
+}
+.form_style .elementor-field-type-submit .elementor-button-text{
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	font-size: var(--fz-boton) !important;
+}
+.form_style .elementor-button *,
+.form_style .elementor-button .elementor-button-icon{
+	color: var(--color-boton) !important;
+}
+/* :hover */
+.form_style .elementor-button *:hover,
+.form_style .elementor-button .elementor-button-icon:hover{
+	color: var(--color-boton-hover) !important;
+}
+.form_style .elementor-button:hover{
+	background: var(--bg-boton-hover) !important;
+}
+
+
+/* *****************************
+* CAMPOS
+* *****************************/
+
+/*****************/
+/* INPUT NORMAL*/
+/*****************/
+.custom-a11yselect-container .custom-a11yselect-btn,
+.form_style .input,/*Input file*/
+.form_style textarea,
+.form_style input,
+.form_style select{
+	padding: var(--padding-input) !important;
+	line-height: 20px !important;
+	height: var(--height-input) !important;
+	border-radius: var(--border-radio-input) !important;
+	border-width: var(--border-width) !important;
+	border-color:  var(--border-color) !important;
+	border-style:  solid !important;
+	background-color: var(--bg-input) !important;
+	width: 100% !important;
+	text-align: left !important;
+	box-shadow: var(--box-shadow-input) !important;
+	font-size: var(--fz-input) !important;
+	font-weight: var(--weight-input) !important;
+	color: var(--color-input) !important;
+}
+
+.form_style textarea{
+	height: var(--height-textarea) !important;
+	padding: var(--padding-input-focus) !important;
+}
+
+/*****************/
+/* LABEL NORMAL*/
+/*****************/
+.jet-filter-label,
+.form_style .input span,/*Input file*/
+.form_style .elementor-field-label{
+	position: absolute !important;
+	line-height: 1em !important;
+	top: inherit !important;
+	bottom: var(--bottom-label) !important;
+	left: calc( 10px/2 + 10px) !important;
+	display: block !important;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	pointer-events: none;
+	opacity: 1;
+	font-size: var(--fz-label) !important;
+	font-weight: var(--weight-label) !important;
+	color: var(--color-label) !important;
+	background-color: var(--bg-label) !important;
+	z-index: 1 !important;
+	padding: 0 5px !important;
+
+	display: -webkit-box !important;
+	-webkit-line-clamp: 1 !important; 
+	line-clamp: 1 !important; 
+	-webkit-box-orient: vertical !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+.form_style label strong,
+.form_style label b{
+	font-weight: var(--weight-label-bold);
+}
+
+/*************************/
+/* LABEL NORMAL - TEXAREA*/
+/*************************/
+.form_style textarea + label.elementor-field-label{ 
+	bottom: inherit !important;
+	top: var(--top-textarea) !important;
+	left: calc( 10px/2 + 10px) !important;
+	background-color: var(--bg-label) !important;
+}
+.form_style .input span{
+	left: 10px;
+}
+
+/**********************/
+/* INPUT ACTIVO */
+/**********************/
+.form_style input:focus,
+.form_style select:focus,
+.form_style textarea:focus{
+	border-color:  var(--color-border-input-focus) !important;
+	padding: var(--padding-input-focus) !important;
+}
+.form_style .active .custom-a11yselect-btn,
+.form_style .active input{
+	border-color: var(--color-border-input-activo) !important;
+	padding: var(--padding-input-activo) !important;
+}
+
+/* Se muestra el placeholder cuando está en focus*/
+.form_style .active input::placeholder,
+.form_style input:focus::placeholder{
+	opacity: 0.3 !important;
+}
+
+/***************/
+/*LABEL ACTIVO */
+/***************/
+.jet-filter-label,
+.form_style .input span,/*Input file*/
+.form_style .active label,
+.form_style .active label,/*siempre activo*/
+.form_style .elementor-field-type-select.active label,
+.form_style .active textarea + label,
+.form_style textarea:focus + label,
+.form_style input:focus + label{
+	bottom: var(--bottom-label-activo) !important;
+	font-size: var(--fz-label-activo) !important;
+	font-weight: var(--weight-label-activo) !important;
+	color: var(--color-label-activo) !important;
+	background-color: var(--bg-label-activo) !important;
+}
+.form_style_2 .input span,/*Input file*/
+.form_style_2 .active label,
+.form_style_2 .elementor-field-type-select label,/*siempre activo*/
+.form_style_2 .elementor-field-type-select.active label,
+.form_style_2 .active textarea + label,
+.form_style_2 textarea:focus + label,
+.form_style_2 input:focus + label{
+	background-color: var(--bg-label-activo-2) !important;
+}
+
+/*************************/
+/*LABEL ACTIVO - TEXTAREA*/
+/*************************/
+.form_style .active textarea + label,
+.form_style textarea:focus + label{
+	top: var(--top-textarea-activo) !important;
+	bottom: inherit !important;
+}
+
+/*activo en select de filtros jetFilter*/
+.jet-smart-filters-select.jet-filter{
+	position: relative;
+}
+.jet-filter-label{
+	left: 11px !important;
+	z-index: 2 !important;
+}
+
+/**********************/
+/* SELECT DESPLEGABLE */
+/**********************/
+.custom-a11yselect-container .custom-a11yselect-menu {
+	background: var(--bg-select-dropdown) !important;
+	display:none;
+	left: 0;
+	margin: 0;
+	max-width: 100%;
+	padding: 14px 0;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	z-index: 5;
+	border-radius: 4px;
+	box-shadow: var(--box-shadow-select-dropdown);
+}
+.custom-a11yselect-container .custom-a11yselect-menu .custom-a11yselect-option.custom-a11yselect-focused button {
+	color: var(--color-select-dropdown-focus) !important;
+	background: var(--bg-select-dropdown-focus) !important;
+}
+.custom-a11yselect-container .custom-a11yselect-menu .custom-a11yselect-option.custom-a11yselect-selected button {
+	color: var(--color-select-dropdown-activo) !important;
+	background: var(--bg-select-dropdown-activo) !important;
+}
+.custom-a11yselect-container .custom-a11yselect-menu .custom-a11yselect-option.custom-a11yselect-disabled button {
+	color: var(--color-select-dropdown-desabilitado) !important;
+	background: var(--bg-select-dropdown-desabilitado) !important;
+	cursor: default;
+}
+
+/**********************
+* CAMPOS RADIO 
+* CHECKBOX-ACEPTANCE
+**********************/
+/* ocultar label del grupo */
+.form_style .elementor-field-type-checkbox label.elementor-field-label,
+.form_style .elementor-field-type-radio label.elementor-field-label,
+.form_style .elementor-field-type-acceptance label.elementor-field-label{
+	opacity: 0 !important;
+	display: none;
+}
+
+/* ocultar input por defecto */
+.form_style .elementor-field-option input{
+	position: absolute !important;
+	opacity: 0 !important;
+}
+
+/* Ordenar items */
+.form_style .elementor-field-option{
+	position: relative !important;
+	margin: 0 0 5px 0 !important;
+	display: block  !important;
+}
+/* anular estilos de active de input normal en label de items */
+.form_style .elementor-field-type-upload .elementor-field-label, /* Input file */
+.form_style .elementor-field-type-upload.active .elementor-field-label,/* Input file */
+
+.form_style .elementor-field-option label,
+.form_style .elementor-field-option input:checked + label,
+.form_style .active .elementor-field-option input + label{
+	width: 100% !important;
+	padding: 0 0 0 30px !important;
+	display: block !important;
+	position: relative !important;
+	top: 0 !important;
+	left: inherit !important;
+	bottom: inherit !important;
+	position: relative !important;
+	opacity: 1 !important;
+	font-size: var(--fz-label) !important;
+	font-weight: var(--weight-input) !important;
+	color: var(--color-label) !important;
+	line-height: 2em !important;
+}
+/* Link de radio o terminos */
+.form_style .elementor-field-option label a{
+	font-size: inherit !important;
+	color: var( --color-a ) !important;
+	line-height: inherit !important;
+	font-weight: inherit !important;
+	text-transform: none !important;
+	text-decoration: none !important;
+}
+.form_style .elementor-field-option label a:hover{
+	text-decoration: underline !important;
+}
+/******************/
+/* CHECK INACTIVO */
+/******************/
+.form_style .elementor-field-option label:before,
+.form_style .elementor-field-option label:after{
+	content: '' !important;
+	border: var(--border-checkbox)  !important;
+	position: absolute !important;
+	border-radius: 4px !important;
+	width: 22px !important;
+	height: 22px !important;
+	top: 6px !important;
+	left: 0px !important;
+	background-color: var(--bg-checkbox) !important;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	cursor:pointer;
+}
+.form_style .elementor-field-option	label:after{
+	background-image: url('/wp-content/themes/hello-child-graphica/img/check-white.svg') !important;
+	background-repeat: no-repeat !important;
+	background-size: 12px !important;
+	background-position: center center !important;
+	opacity: 0 !important;
+	background-color: transparent !important;
+	border: none !important;
+}
+
+/* Check activo o checked */
+.form_style .elementor-field-option	input:checked + label:before{
+	background-color: var(--bg-checkbox-activo) !important;
+	border: var(--border-checkbox-activo)  !important;
+}
+.form_style .elementor-field-option	input:checked + label:after{
+	opacity: 1 !important;
+}
+
+/* sparacion final de Check terminos */
+.form_style .elementor-field-type-acceptance{
+	margin-bottom: 0px !important;
+}
+
+/* Tipo Radio */
+.form_style .elementor-field-type-radio .elementor-field-option	label:before,
+.form_style .elementor-field-type-radio .elementor-field-option label:after{
+	border-radius: 50px !important;
+}
+.form_style .elementor-field-type-radio .elementor-field-option label:after{
+	background-image: none !important
+}
+
+/* **********
+* HTML 
+* **********/
+.form_style .elementor-field-type-html h3,
+.form_style .elementor-field-type-html h4,
+.form_style .elementor-field-type-html h5,
+.form_style .elementor-field-type-html h6{
+	font-family: var(--font-family-html) !important;
+	margin: 20px 0px 0px 0px  !important;
+	padding: 0px !important;
+	background: transparent;
+	border-radius: 0px;
+	display: block;
+}
+.form_style .elementor-field-type-html h3 *,
+.form_style .elementor-field-type-html h3{
+	text-transform: var(--text-transform-h3-html) !important;
+	font-weight: var(--font-weight-h3-html) !important;
+	font-size: var(--fz-h3-html) !important;
+	color: var(--color-h3-html) !important;	
+}
+.form_style .elementor-field-type-html h4 *,
+.form_style .elementor-field-type-html h4{
+	text-transform: var(--text-transform-h4-html) !important;
+	font-weight: var(--font-weight-h4-html) !important;
+	font-size: var(--fz-h4-html) !important;
+	color: var(--color-h4-html) !important;	
+}
+.form_style .elementor-field-type-html h5 *,
+.form_style .elementor-field-type-html h5{
+	text-transform: var(--text-transform-h5-html) !important;
+	font-weight: var(--font-weight-h5-html) !important;
+	font-size: var(--fz-h5-html) !important;
+	color: var(--color-h5-html) !important;	
+}
+.form_style .elementor-field-type-html h6 *,
+.form_style .elementor-field-type-html h6{
+	text-transform: var(--text-transform-h6-html) !important;
+	font-weight: var(--font-weight-h6-html) !important;
+	font-size: var(--fz-h6-html) !important;
+	color: var(--color-h6-html) !important;	
+}
+.form_style .elementor-field-type-html p *,
+.form_style .elementor-field-type-html p{
+	text-transform: var(--text-transform-parrafo-html) !important;
+	font-weight: var(--font-weight-parrafo-html) !important;
+	font-size: var(--fz-parrafo-html) !important;
+	color: var(--color-parrafo-html) !important;
+	text-align: var(--align-parrafo-html) !important;
+	margin-bottom: 15px !important;
+}
+
+@media (max-width: 768px){
+	.form_style .elementor-field-type-html h3 *,
+	.form_style .elementor-field-type-html h3{
+		font-size: var(--fz-h3-html-movile) !important;
+	}
+	.form_style .elementor-field-type-html h4 *,
+	.form_style .elementor-field-type-html h4{
+		font-size: var(--fz-h4-html-movile) !important;
+	}
+	.form_style .elementor-field-type-html h5 *,
+	.form_style .elementor-field-type-html h5{
+		font-size: var(--fz-h5-html-movile) !important;
+	}
+	.form_style .elementor-field-type-html h6 *,
+	.form_style .elementor-field-type-html h6{
+		font-size: var(--fz-h6-html-movile) !important;
+	}
+	.form_style .elementor-field-type-html p *,
+	.form_style .elementor-field-type-html p{
+		font-size: var(--fz-parrafo-html-movile) !important;
+	}
+}
+
+/* ******************
+* ADJUNTAR ARCHIVO
+* ********************/
+
+/* ocultar input por defecto*/
+.form_style .elementor-field-type-upload input{
+	position: absolute !important;
+	opacity: 0 !important;
+	width: 100% !important;
+	top: 0 !important;
+	height: 0px !important;
+}
+/* ocultar label por defecto*/
+.form_style .elementor-field-type-upload.active .elementor-field-label,
+.form_style .elementor-field-type-upload .elementor-field-label{
+	padding: 0px !important;
+	font-size: 10px !important;
+	pointer-events: inherit !important;
+}
+.form_style .elementor-field-type-upload .input{
+	width: 100%;
+	vertical-align: middle;
+	font-weight: normal !important;
+	height: 50px !important;
+	line-height: 30px !important;
+	overflow: hidden;
+	display: block  !important;
+	position: relative;
+	padding-right: 30px !important;
+	padding-left: 15px !important;
+}
+
+/********************/
+/* ICONO INPUT DATE */
+/********************/
+.form_style .elementor-field-type-upload .elementor-field-label:before,
+.form_style .elementor-field-type-date:before{
+	content: "\f133"; /*calendario*/
+	font-size: 15px;
+	color: var(--color-drop-icon-campos);
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+
+	width: 20px !important;
+	height: 20px !important;
+	position: absolute !important;
+	display: block !important;
+	right: var(--right-drop-icon-campos) !important;
+	top: calc(50% - 10px) !important;
+	pointer-events: none !important;
+	cursor: pointer !important;
+}
+/*****************/
+/* ICONO UPLOAD */
+/*****************/
+.form_style .elementor-field-type-upload .elementor-field-label:before{
+	content: "\f062"; /*flecha arriba*/
+	font-weight: 900;
+}
+
+/***************/
+/* ICONO SELECT*/
+/***************/
+
+/***************/
+/* ICONO SELECT*/
+/***************/
+.custom-a11yselect-container i:before{
+	content: "\66";
+}
+
+/* **********
+* SELECT A11 
+* **********/
+
+/* Contenedor */
+.custom-a11yselect-container {
+	margin-bottom:0;
+	position:
+		relative;
+	width: 100% !important;
+}
+/* Icono dropdown */
+.custom-a11yselect-container i.custom-a11yselect-icon {
+	content: '';
+	line-height: 1;
+	pointer-events: none;
+	position: absolute;
+	right: var(--right-drop-icon-campos);
+	top: calc(50% - 10px);
+	transition: all .3s linear !important;
+	-webkit-transition: all .3s linear !important;
+}
+.custom-a11yselect-container i.custom-a11yselect-icon:before{
+	font-family: "savia-icon-font" !important;
+	font-style: normal !important;
+	font-size: 20px;
+	color: var(--color-drop-icon-campos);
+}
+.custom-a11yselect-container i.custom-a11yselect-icon.icon-carrat-down {
+	transform: rotate(0);
+}
+.custom-a11yselect-container i.custom-a11yselect-icon.icon-carrat-up {
+	transform: rotate(180deg);
+}
+
+/************/
+.custom-a11yselect-container .custom-a11yselect-menu.opened {
+	display: block;
+}
+.custom-a11yselect-container .custom-a11yselect-menu.custom-a11yselect-overflow {
+	max-height: 250px; /* can be overriden by overlay parameter */
+	overflow-x:	hidden;
+	overflow-y:	auto;
+}
+.custom-a11yselect-container .custom-a11yselect-menu.custom-a11yselect-hidden {
+	display: none !important;
+}
+.custom-a11yselect-container .custom-a11yselect-menu.custom-a11yselect-reversed {
+	border-top:1px solid #D7D7D7;
+	border-bottom: none;
+	bottom:100%;
+	top: auto;
+}
+.custom-a11yselect-container .custom-a11yselect-menu .custom-a11yselect-option {
+	display: block;
+}
+.custom-a11yselect-container .custom-a11yselect-menu .custom-a11yselect-option button {
+	background: transparent;
+	border: none;
+	color: var(--color-select-normal) !important;
+	line-height: 21px !important;
+	padding: 10px 18px;
+	text-align: left;
+	width: 100%;
+	box-shadow: none !important;
+	border-radius: 0px;
+}
+
+.custom-a11yselect-container .custom-a11yselect-img {
+	background-repeat:	no-repeat;
+	background-size: contain;
+	display: inline-block;
+	margin-right: 10px;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+}
+.custom-a11yselect-container select.custom-a11yselect-mobile {
+	display: block !important;
+	height:100% !important;
+	left:0 !important;
+	margin:0 !important;
+	opacity:0 !important;
+	padding:0 !important;
+	position: absolute !important;
+	top:0 !important;
+	visibility: visible !important;
+	width:100% !important;
+	z-index:99999;
+	-webkit-appearance: menulist-button !important;
+	-moz-appearance: menulist-button !important;
+	appearance: menulist-button !important;
+}
+
+/*BOTON SOBRE INPUT*/
+
+.form_style.botonLeft .elementor-field-type-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-radius: 0 !important;
+	max-width: 64px;
+}
+.form_style.botonLeft .elementor-field-type-submit button{
+	border-radius: 0px !important;
+	background: transparent !important;
+	color: #00FF64 !important;
+	box-shadow: none !important;
+	line-height: 1 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+.form_style.botonLeft .elementor-field-type-submit button i{
+	color: #00FF64 !important;
+	font-size: 20px !important;
+	line-height: 1;
+}
+.form_style.botonLeft .elementor-field-type-submit button>span{
+	border-left: 1px solid #F2F0F8;
+}
+.form_style.botonLeft .elementor-field-type-submit button:hover i{
+	color: #2eba34 !important;
+	font-size: 20px !important;
+	line-height: 1 !important;
+}
