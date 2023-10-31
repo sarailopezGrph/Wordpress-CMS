@@ -1,12 +1,13 @@
+/**********************/
+/* FORM NO BORRAR */
+/********************/
 :root{
 	/*Label*/
-	--color-label: #3F346F;
-	--color-label-activo: #3F346F;
+	--color-label: #193C6C;
+	--color-label-activo: #193C6C;
 	--weight-label: 400;
 	--weight-label-bold: 400;
 	--weight-label-activo: 600;
-	--bottom-label:  18px;
-	--bottom-label-activo: 43px;
 	--fz-label: 16px;
 	--fz-label-activo: 13px;
 	--bg-label: transparent;
@@ -14,97 +15,104 @@
 	--bg-label-activo-2: #fafafa;
 
 	/*Input*/
-	--color-input: #606060;
+	--color-input: #686868;
 	--fz-input: 16px;
 	--weight-input: normal;
-	--bg-input: white;
+	--bg-input: #FAFCFF;
 	--height-input:  50px;
-	--warning: #A6A6A6;	
-	--border-width: 0px;
-	--border-color: #A6A6A6;
-	--color-border-input-activo:#A6A6A6;
-	--color-border-input-focus:#A6A6A6;
-	--border-radio-input:  10px;
-	--box-shadow-input: 0px 2px 6px rgba(66, 32, 215, 0.13);;
+	--warning-color-field: #686868;
+	--warning-border-field: #A6C3D8; /*campo obligatorio*/
+	--border-width: 0px 0px 1px 0px;
+	--border-color-form: #A6C3D8;
+	--color-border-input-activo:#A6C3D8;
+	--color-border-input-focus:#6DADD0;
+	--border-radio-input:  0px;
+	--box-shadow-input: 0px 2px 6px #FAFCFF;
 	--padding-input: 10px 10px 10px 10px;
 	--padding-input-focus: 15px;
 	--padding-input-activo: 15px;
 	--margin-bottom-input: 15px;
 
 	/*Mensaje de validacion*/
-	--color-mensaje: #2EBA34;
+	--color-mensaje: #09525C;
 	--align-mensaje-desktop: left;
-	--align-mensaje-mobile: center;
+	--align-mensaje-mobile: left;
+	
 
 	/*Select*/
-	--bg-select-dropdown: #f6f6f6;
-	--box-shadow-select-dropdown: 0 0 10px rgba(0,0,0,.2);
+	--bg-select-dropdown: #F9FCFF;
+	--box-shadow-select-dropdown: 0 0 10px rgba(0,0,0,0.1);
 
-	--color-select-normal: #606060; 
+	--color-select-normal: #193C6C; 
 
-	--bg-select-dropdown-focus: #f6f6f6 ;
-	--color-select-dropdown-focus: #3B37FE ;
+	--bg-select-dropdown-focus: #F9FCFF ;
+	--color-select-dropdown-focus: #193C6C ;
 
-	--bg-select-dropdown-activo: rgba(0,0,0,.02) ;
-	--color-select-dropdown-activo: #3B37FE ;
+	--bg-select-dropdown-activo: #F9FCFF ;
+	--color-select-dropdown-activo: #193C6C ;
 
-	--bg-select-dropdown-desabilitado: #F0F0F0 ;
+	--bg-select-dropdown-desabilitado: #F9FCFF ;
 	--bg-color-dropdown-desabilitado: #666;
 
 	/*Textarea*/
-	--height-textarea: 115px;
-	--top-textarea: 15px;
-	--top-textarea-activo: -6px;
+	--height-textarea: 60px;
 
 	/*Todos los campos*/
-	--color-drop-icon-campos: #00FF64;
+	--color-drop-icon-campos: #193C6C;
 	--right-drop-icon-campos: 18px;
 
 	/*Boton*/
 	--color-boton: white;
 	--height-boton: 50px;
-	--bg-boton: #2EBA34;
-	--fz-boton: 20px;
+	--bg-boton: #193C6C;
+	--fz-boton: auto;
 	--color-boton-hover: white;
-	--bg-boton-hover: #00FF64;	
+	--bg-boton-hover: #193C6C;
+
+	--bg-botonLeft: transparent;
+	--bg-botonLeftHover: transparent;
+	--color-botonLeft: #193C6C;
+	--color-botonLeftHover: #193C6C;
 
 	/*Link*/
-	--color-a:#2EBA34;
+	--color-a: #193C6C;
 
 	/* Checkbox */
-	--border-checkbox:  2px solid #606060;
-	--bg-checkbox:  #fafafa;
-	--border-checkbox-activo:  2px solid #fafafa;
-	--bg-checkbox-activo:  #2EBA34;
+	--border-checkbox:  2px solid #193C6C;
+	--bordercolor-radio-activo: #193C6C;
+	--bg-checkbox:  transparent;
+	--border-checkbox-activo:  2px solid #193C6C;
+	--bg-radio-activo:  #193C6C;
+	--border-radio-checkbox: 0px;
 
 	/*HTML*/
-	--font-family-html: "Poppins";
+	--font-family-html: "Seoge UI";
 
-	--color-h3-html: #3B37FE;
+	--color-h3-html: #193C6C;
 	--fz-h3-html: 65px;
 	--fz-h3-html-movile: 45px;
 	--text-transform-h3-html: normal;
 	--font-weight-h3-html: bold;
 
-	--color-h4-html: #3B37FE;
+	--color-h4-html: #193C6C;
 	--fz-h4-html: 55px;
 	--fz-h4-html-movile: 35px;
 	--text-transform-h4-html: normal;
 	--font-weight-h4-html: bold;
 
-	--color-h5-html: #3B37FE;
-	--fz-h5-html: 45px;
-	--fz-h5-html-movile: 25px;
+	--color-h5-html: #193C6C;
+	--fz-h5-html: 20px;
+	--fz-h5-html-movile: 19px;
 	--text-transform-h5-html: normal;
 	--font-weight-h5-html: bold;
 
-	--color-h6-html: #606060;
+	--color-h6-html: #193C6C;
 	--fz-h6-html: 18px;
 	--fz-h6-html-movile: 16px;
 	--text-transform-h6-html: normal;
 	--font-weight-h6-html: 400;
 
-	--color-parrafo-html: #3F346F;
+	--color-parrafo-html: #686868;
 	--fz-parrafo-html: 18px;
 	--fz-parrafo-html-movile: 16px;
 	--text-transform-parrafo-html: normal;
@@ -154,7 +162,7 @@ input::placeholder{
 
 /* Set validaciones y estados de input*/
 .form_style input:invalid{
-	border-color: var(--warning) !important;
+	border-color: var(--warning-border-field) !important;
 }
 *:focus,
 input:invalid,
@@ -200,7 +208,7 @@ select:focus{
 	padding: 0px !important;
 	bottom: -16px !important;
 	left: 10px !important;
-	color: var(--warning) !important;
+	color: var(--warning-color-field) !important;
 }
 @media(max-width: 768px){
 	.form_style .elementor-message{
@@ -253,9 +261,10 @@ select:focus{
 	padding: var(--padding-input) !important;
 	line-height: 20px !important;
 	height: var(--height-input) !important;
+	border: inherit !important;
 	border-radius: var(--border-radio-input) !important;
 	border-width: var(--border-width) !important;
-	border-color:  var(--border-color) !important;
+	border-color:  var(--border-color-form) !important;
 	border-style:  solid !important;
 	background-color: var(--bg-input) !important;
 	width: 100% !important;
@@ -280,7 +289,7 @@ select:focus{
 	position: absolute !important;
 	line-height: 1em !important;
 	top: inherit !important;
-	bottom: var(--bottom-label) !important;
+	bottom: calc(100% - 32px) !important;
 	left: calc( 10px/2 + 10px) !important;
 	display: block !important;
 	transition: all .2s linear;
@@ -310,8 +319,7 @@ select:focus{
 /* LABEL NORMAL - TEXAREA*/
 /*************************/
 .form_style textarea + label.elementor-field-label{ 
-	bottom: inherit !important;
-	top: var(--top-textarea) !important;
+	top: inherit !important;
 	left: calc( 10px/2 + 10px) !important;
 	background-color: var(--bg-label) !important;
 }
@@ -334,7 +342,7 @@ select:focus{
 	padding: var(--padding-input-activo) !important;
 }
 
-/* Se muestra el placeholder cuando está en focus*/
+/* Se muestra el placeholder cuando estÃ¡ en focus*/
 .form_style .active input::placeholder,
 .form_style input:focus::placeholder{
 	opacity: 0.3 !important;
@@ -351,7 +359,7 @@ select:focus{
 .form_style .active textarea + label,
 .form_style textarea:focus + label,
 .form_style input:focus + label{
-	bottom: var(--bottom-label-activo) !important;
+	bottom: calc(100% - 8px) !important;
 	font-size: var(--fz-label-activo) !important;
 	font-weight: var(--weight-label-activo) !important;
 	color: var(--color-label-activo) !important;
@@ -367,14 +375,6 @@ select:focus{
 	background-color: var(--bg-label-activo-2) !important;
 }
 
-/*************************/
-/*LABEL ACTIVO - TEXTAREA*/
-/*************************/
-.form_style .active textarea + label,
-.form_style textarea:focus + label{
-	top: var(--top-textarea-activo) !important;
-	bottom: inherit !important;
-}
 
 /*activo en select de filtros jetFilter*/
 .jet-smart-filters-select.jet-filter{
@@ -481,7 +481,7 @@ select:focus{
 	content: '' !important;
 	border: var(--border-checkbox)  !important;
 	position: absolute !important;
-	border-radius: 4px !important;
+	border-radius: var(--border-radio-checkbox) !important;
 	width: 22px !important;
 	height: 22px !important;
 	top: 6px !important;
@@ -492,18 +492,22 @@ select:focus{
 	cursor:pointer;
 }
 .form_style .elementor-field-option	label:after{
-	background-image: url('/wp-content/themes/hello-child-graphica/img/check-white.svg') !important;
-	background-repeat: no-repeat !important;
-	background-size: 12px !important;
-	background-position: center center !important;
+	font-family: "icomoon" !important;
+	font-size: 20px !important;
+	line-height: 22px !important;
+	color: var(--color-drop-icon-campos);
+	content: "\e924" !important;  /*check*/
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	
 	opacity: 0 !important;
 	background-color: transparent !important;
-	border: none !important;
 }
 
 /* Check activo o checked */
 .form_style .elementor-field-option	input:checked + label:before{
-	background-color: var(--bg-checkbox-activo) !important;
 	border: var(--border-checkbox-activo)  !important;
 }
 .form_style .elementor-field-option	input:checked + label:after{
@@ -521,7 +525,9 @@ select:focus{
 	border-radius: 50px !important;
 }
 .form_style .elementor-field-type-radio .elementor-field-option label:after{
-	background-image: none !important
+	background-color: var(--bg-radio-activo) !important;
+	border-color: var(--bordercolor-radio-activo) !important;
+	content: '' !important;
 }
 
 /* **********
@@ -635,12 +641,15 @@ select:focus{
 /* ICONO INPUT DATE */
 /********************/
 .form_style .elementor-field-type-upload .elementor-field-label:before,
-.form_style .elementor-field-type-date:before{
-	content: "\f133"; /*calendario*/
-	font-size: 15px;
+.form_style .elementor-field-type-date:before{	
+	font-family: "icomoon" !important;
+	font-size: 20px;
 	color: var(--color-drop-icon-campos);
-	font-family: "Font Awesome 5 Free";
-	font-weight: 400;
+	content: "\e916" !important;  /*calendario*/
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
 
 	width: 20px !important;
 	height: 20px !important;
@@ -662,10 +671,6 @@ select:focus{
 /***************/
 /* ICONO SELECT*/
 /***************/
-
-/***************/
-/* ICONO SELECT*/
-/***************/
 .custom-a11yselect-container i:before{
 	content: "\66";
 }
@@ -673,7 +678,9 @@ select:focus{
 /* **********
 * SELECT A11 
 * **********/
-
+.custom-a11yselect-container .custom-a11yselect-btn {
+	background: var(--bg-input) !important;
+}
 /* Contenedor */
 .custom-a11yselect-container {
 	margin-bottom:0;
@@ -693,10 +700,14 @@ select:focus{
 	-webkit-transition: all .3s linear !important;
 }
 .custom-a11yselect-container i.custom-a11yselect-icon:before{
-	font-family: "savia-icon-font" !important;
-	font-style: normal !important;
+	font-family: "icomoon" !important;
 	font-size: 20px;
 	color: var(--color-drop-icon-campos);
+	content: "\e903" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
 }
 .custom-a11yselect-container i.custom-a11yselect-icon.icon-carrat-down {
 	transform: rotate(0);
@@ -765,7 +776,15 @@ select:focus{
 }
 
 /*BOTON SOBRE INPUT*/
-
+.form_style.botonLeft .active label, 
+.form_style.botonLeft input:focus + label{
+	color: var( --e-global-color-text ) !important;
+	bottom: calc(100% - 20px) !important;
+}
+.form_style.botonLeft input,
+.form_style.botonLeft .active input{
+	padding: 20px 15px 5px 15px !important;
+}
 .form_style.botonLeft .elementor-field-type-submit {
 	position: absolute;
 	top: 0;
@@ -775,17 +794,21 @@ select:focus{
 	border-radius: 0 !important;
 	max-width: 64px;
 }
+.form_style.botonLeft .elementor-button-icon {
+	margin-left: 20px !important;
+	margin-right: inherit !important;
+}
 .form_style.botonLeft .elementor-field-type-submit button{
 	border-radius: 0px !important;
 	background: transparent !important;
-	color: #00FF64 !important;
+	color: var(--color-botonLeft) !important;
 	box-shadow: none !important;
 	line-height: 1 !important;
 	padding: 0 !important;
 	border: none !important;
 }
 .form_style.botonLeft .elementor-field-type-submit button i{
-	color: #00FF64 !important;
+	color: var(--color-botonLeft) !important;
 	font-size: 20px !important;
 	line-height: 1;
 }
@@ -793,7 +816,5 @@ select:focus{
 	border-left: 1px solid #F2F0F8;
 }
 .form_style.botonLeft .elementor-field-type-submit button:hover i{
-	color: #2eba34 !important;
-	font-size: 20px !important;
-	line-height: 1 !important;
+	color:  var(--color-botonLeftHover) !important;
 }
